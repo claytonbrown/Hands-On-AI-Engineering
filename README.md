@@ -72,6 +72,8 @@ Intelligent ai agents for various automation tasks.
 - [**Personal Finance Agent**](./ai_agents/personal_finance_agent) - Upload a bank statement CSV, auto-categorize transactions, and ask natural language questions about your spending. Powered by a LangChain tool-calling agent backed by Orq.ai with SQLite persistence.
 - [**Offline Medical Agent**](./ai_agents/offline_medical_agent) - Fully offline agentic RAG system for clinical protocol lookup at remote clinics and field hospitals.
 - [**Customer Query Routing and Resolution Agent**](./ai_agents/customer_query_routing_agent) - Routes incoming support queries to the right department and generates grounded responses using [Actian VectorAI DB](https://www.actian.com/databases/vectorai-db/) as a local persistent memory and retrieval layer. 
+- [**Email Auto Responder**](./ai_agents/email_auto_responder). Reads unread Gmail messages over IMAP, classifies intent with CrewAI agents on GLM-5.1, and drafts professional replies in a Streamlit dashboard.
+- [**LLM Agri Bot**](./ai_agents/llm_agri_bot). Farming assistant that answers questions on crop health, weather, pests, and planting seasons using a LangChain tool-calling agent powered by Mistral.
 
 ### 📸 OCR
 
@@ -117,6 +119,12 @@ Retrieval-Augmented Generation systems for knowledge-enhanced AI applications.
 - [**Rock Music RAG**](./rag_apps/rock_music_rag) — Custom rock music knowledge base built from Wikipedia. Add any band, ask questions across all of them, and get sourced answers powered by BM25 retrieval and Gemma 4.
 - [**RAG Agent with Database Routing**](./rag_apps/rag_agent_with_database_routing) — Routes queries across three specialized Qdrant databases (products, support, financial) using an Agno router agent. Falls back to a LangGraph ReAct web search agent when no relevant documents are found.
 - [**Reasoning RAG**](./rag_apps/reasoning_rag) - Ask questions against any web source and get cited answers with a live, step-by-step reasoning trace via Gradio.
+
+### 🎛️ Fine-Tuning
+
+Projects for training and fine-tuning models on specialized tasks.
+
+- [**Text-to-SQL Inventory Specialist**](./fine_tuning/text_to_sql_inventory). Natural language interface for retail inventory databases using a fine-tuned Qwen3.5-2B model. Ask questions in plain English and get SQL-backed answers via Gradio.
 
 ---
 
